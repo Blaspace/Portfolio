@@ -2,6 +2,7 @@ import React from "react";
 import { TiPhoneOutline } from "react-icons/ti";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 function ThirdSection() {
   const handleNavigate = (uri) => {
