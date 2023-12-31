@@ -7,6 +7,33 @@ function ThirdSection() {
   const handleNavigate = (uri) => {
     window.open(uri);
   };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_ras6ajn",
+        "template_0otu6tj",
+        form.current,
+        "-EKLMNlWVDcoczk7f"
+      )
+      .then(
+        (result) => {
+          number.current.value = "";
+          email.current.value = "";
+          firstName.current.value = "";
+          secondName.current.value = "";
+          message.current.value = "";
+          alert(
+            "Hello, thanks for contacting me, your message has been received I will get back to you shortly"
+          );
+        },
+        (error) => {
+          alert("oops, sorry something went wrong please try again");
+        }
+      );
+  };
+
   return (
     <div className="third" id="fourth">
       <div className="third-con">
@@ -57,27 +84,37 @@ function ThirdSection() {
             />
           </span>
         </div>
-        <form>
+        <form onSubmit={sendEmail}>
           <br />
           <br />
           <label>Full Name</label>
           <br />
-          <input type="text" placeholder="Full Name..." />
+          <input
+            type="text"
+            placeholder="Full Name..."
+            name="firstName"
+            required
+          />
           <br />
           <br />
           <label>Email</label>
           <br />
-          <input type="email" placeholder="Email..." />
+          <input type="email" placeholder="Email..." name="email" required />
           <br />
           <br />
           <label>Phone Number</label>
           <br />
-          <input type="tel" placeholder="Phone Number..." />
+          <input
+            type="tel"
+            placeholder="Phone Number..."
+            name="number"
+            required
+          />
           <br />
           <br />
           <label>Message</label>
           <br />
-          <textarea placeholder="Message..." />
+          <textarea placeholder="Message..." name="message" required />
           <br />
           <br />
           <button>Send</button>
