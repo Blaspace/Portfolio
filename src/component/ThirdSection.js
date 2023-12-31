@@ -9,6 +9,7 @@ function ThirdSection() {
   const email = useRef();
   const number = useRef();
   const message = useRef();
+  const form = useRef();
 
   const handleNavigate = (uri) => {
     window.open(uri);
@@ -89,7 +90,7 @@ function ThirdSection() {
             />
           </span>
         </div>
-        <form onSubmit={sendEmail}>
+        <form onSubmit={sendEmail} ref={form}>
           <br />
           <br />
           <label>Full Name</label>
