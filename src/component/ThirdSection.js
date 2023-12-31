@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import { TiPhoneOutline } from "react-icons/ti";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 function ThirdSection() {
+  const firstName = useRef();
+  const email = useRef();
+  const number = useRef();
+  const message = useRef();
+
   const handleNavigate = (uri) => {
     window.open(uri);
   };
@@ -23,7 +28,6 @@ function ThirdSection() {
           number.current.value = "";
           email.current.value = "";
           firstName.current.value = "";
-          secondName.current.value = "";
           message.current.value = "";
           alert(
             "Hello, thanks for contacting me, your message has been received I will get back to you shortly"
@@ -92,6 +96,7 @@ function ThirdSection() {
           <br />
           <input
             type="text"
+            ref={firstName}
             placeholder="Full Name..."
             name="firstName"
             required
@@ -100,13 +105,20 @@ function ThirdSection() {
           <br />
           <label>Email</label>
           <br />
-          <input type="email" placeholder="Email..." name="email" required />
+          <input
+            type="email"
+            placeholder="Email..."
+            ref={email}
+            name="email"
+            required
+          />
           <br />
           <br />
           <label>Phone Number</label>
           <br />
           <input
             type="tel"
+            ref={number}
             placeholder="Phone Number..."
             name="number"
             required
@@ -115,7 +127,12 @@ function ThirdSection() {
           <br />
           <label>Message</label>
           <br />
-          <textarea placeholder="Message..." name="message" required />
+          <textarea
+            placeholder="Message..."
+            name="message"
+            required
+            ref={email}
+          />
           <br />
           <br />
           <button>Send</button>
