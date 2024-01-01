@@ -16,7 +16,7 @@ function FirstSection() {
             <small> {"<"}</small>About Me<small>{">"}</small>
           </h1>
           <br />
-          <p>
+          <p data-aos="fade" data-aos-duration="500">
             Hey there, I'm James Ngbede Samuel, a full stack developer, With
             expertise in HTML/CSS, JavaScript, React.js, Node.js, Express.js,
             and MongoDB, I'm dedicated to crafting seamless web experiences that
@@ -41,34 +41,39 @@ function FirstSection() {
                   "https://www.linkedin.com/in/james-samuel-8a3b21274"
                 )
               }
+              data-aos="fade-up"
+              data-aos-duration="1000"
             />
             <FaGithubSquare
               className="icon"
               onClick={() => handleNavigate("https://github.com/Blaspace")}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
             />
           </span>
         </section>
         <section id="second">
-          <div timing="0s">
+          <div timing="0s" data-aos="fade-left" data-aos-duration="500">
             <AiOutlineHtml5 size={25} style={{ marginRight: "5px" }} />{" "}
             <p>Html/css</p>
           </div>
-          <div timing="0.5s">
+          <div timing="0.5s" data-aos="fade-left" data-aos-duration="500">
             <SiJavascript size={25} style={{ marginRight: "5px" }} />{" "}
             <p>JavaScript</p>
           </div>
-          <div timing="1s">
+          <div timing="1s" data-aos="fade-left" data-aos-duration="500">
             <FaReact size={25} style={{ marginRight: "5px" }} /> <p>React.js</p>
           </div>
-          <div timing="1.5s">
+          <div timing="1.5s" data-aos="fade-left" data-aos-duration="500">
             <FaNodeJs size={25} style={{ marginRight: "5px" }} />{" "}
             <p>Node.js/Express</p>
           </div>
-          <div timing="2s">
+          <div timing="2s" data-aos="fade-left" data-aos-duration="500">
             <SiMongodb size={25} style={{ marginRight: "5px" }} />{" "}
             <p>MongoDB</p>
           </div>
-          <div timing="2.5s">
+          <div timing="2.5s" data-aos="fade-left" data-aos-duration="500">
             <FaGit size={25} style={{ marginRight: "5px" }} /> <p>Git/GitHub</p>
           </div>
         </section>

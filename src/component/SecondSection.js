@@ -11,7 +11,7 @@ function SecondSection() {
   const fullStackProjects = [
     {
       name: "YouFeat",
-      url: "youfeat.ng",
+      url: "https://youfeat.ng",
       git: "",
       about:
         "YouFeat is a dynamic and engaging online platform designed to host talent competitions, providing a stage for individuals to showcase their unique abilities. Developed using ReactJS for the front end, NodeJS and ExpressJS for the backend, and MongoDB for data storage, this project seamlessly integrates technology and creativity to create an immersive user experience.",
@@ -76,17 +76,28 @@ function SecondSection() {
           {fullStackProjects.map((value, i) => {
             return (
               <div className="project" key={i}>
-                <div>
+                <div alt="project" data-aos="zoom-in" data-aos-duration="1000">
                   <img src={value.img} alt="project" />
                 </div>
                 <section>
-                  <h2>{value.name}</h2>
+                  <h2 data-aos="fade-left" data-aos-duration="1000">
+                    {value.name}
+                  </h2>
                   <br />
                   <p>{value.about}</p>
                   <br />
                   <ul>
                     {value.skills.map((v, x) => {
-                      return <li key={x}>{v}</li>;
+                      return (
+                        <li
+                          key={x}
+                          data-aos="fade-up"
+                          data-aos-duration="1000"
+                          data-aos-delay={`${x}00`}
+                        >
+                          {v}
+                        </li>
+                      );
                     })}
                   </ul>
                   <br />
@@ -102,16 +113,32 @@ function SecondSection() {
             return (
               <div className="project" key={i}>
                 <div>
-                  <img src={value.img} alt="project" />
+                  <img
+                    src={value.img}
+                    alt="project"
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                  />
                 </div>
                 <section>
-                  <h2>{value.name}</h2>
+                  <h2 data-aos="fade-left" data-aos-duration="1000">
+                    {value.name}
+                  </h2>
                   <br />
                   <p>{value.about}</p>
                   <br />
                   <ul>
                     {value.skills.map((v, x) => {
-                      return <li key={x}>{v}</li>;
+                      return (
+                        <li
+                          key={x}
+                          data-aos="fade-up"
+                          data-aos-duration="1000"
+                          data-aos-delay={`${x}00`}
+                        >
+                          {v}
+                        </li>
+                      );
                     })}
                   </ul>
                   <br />

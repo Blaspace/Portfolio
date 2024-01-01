@@ -10,12 +10,15 @@ function ThirdSection() {
   const number = useRef();
   const message = useRef();
   const form = useRef();
+  const btnRef = useRef();
 
   const handleNavigate = (uri) => {
     window.open(uri);
   };
 
   const sendEmail = (e) => {
+    btnRef.current.disabled = true;
+    btnRef.current.innerText = "Loading...";
     e.preventDefault();
     emailjs
       .sendForm(
@@ -26,10 +29,6 @@ function ThirdSection() {
       )
       .then(
         (result) => {
-          number.current.value = "";
-          email.current.value = "";
-          firstName.current.value = "";
-          message.current.value = "";
           alert(
             "Hello, thanks for contacting me, your message has been received I will get back to you shortly"
           );
@@ -37,7 +36,15 @@ function ThirdSection() {
         (error) => {
           alert("oops, sorry something went wrong please try again");
         }
-      );
+      )
+      .finally(() => {
+        number.current.value = "";
+        email.current.value = "";
+        firstName.current.value = "";
+        message.current.value = "";
+        btnRef.current.disabled = false;
+        btnRef.current.innerText = "Send";
+      });
   };
 
   return (
@@ -47,7 +54,7 @@ function ThirdSection() {
           <br />
           <br />
           <h1>
-            {"<"}Contact Us{">"}
+            {"<"}Contact Me{">"}
           </h1>
           <br />
           <p>Looking forward with enthusiasm to connect and hear from you</p>
@@ -136,7 +143,7 @@ function ThirdSection() {
           />
           <br />
           <br />
-          <button>Send</button>
+          <button ref={btnRef}>Send</button>
           <br />
         </form>
       </div>
