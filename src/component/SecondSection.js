@@ -6,6 +6,7 @@ import blogy from "../public/blogApp.jpg";
 import webc from "../public/webc.PNG";
 import color from "../public/color.PNG";
 import admin from "../public/admin.PNG";
+import news from "../public/news.PNG";
 
 function SecondSection() {
   const fullStackProjects = [
@@ -17,6 +18,14 @@ function SecondSection() {
         "YouFeat is a dynamic and engaging online platform designed to host talent competitions, providing a stage for individuals to showcase their unique abilities. Developed using ReactJS for the front end, NodeJS and ExpressJS for the backend, and MongoDB for data storage, this project seamlessly integrates technology and creativity to create an immersive user experience.",
       skills: ["React.js", "Node.js", "Express", "MongoDB", "CSS"],
       img: youfeat,
+    },
+    {
+      name: "News Website",
+      url: "https://newsweb-i8wp.onrender.com",
+      about:
+        "News Scraper App is a dynamic web application that leverages the power of React and Node.js to fetch and display real-time news from CNN. The application seamlessly integrates a web scraper, built using Node.js, to gather the latest news articles from CNN's website. The collected data is then presented in a user-friendly interface crafted with React.",
+      skills: ["React.js", "Node.js", "Express", "CSS"],
+      img: news,
     },
     {
       name: "Employee Managment App",
@@ -52,6 +61,7 @@ function SecondSection() {
       skills: ["React.js", "CSS"],
       img: webc,
     },
+
     {
       name: "Landing Page",
       url: "https://colorweb.onrender.com",
