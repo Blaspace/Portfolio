@@ -7,7 +7,7 @@ function Header() {
         <div className="header-text">
           <h1>James Ngbede Samuel</h1>
           <p>
-            <small>{"<"}</small>Full Stack Web Developer<small>{">"}</small>
+            <small>{"<"}</small>Front End Web Developer<small>{">"}</small>
           </p>
           <a href="#fourth">
             <button>Contact</button>

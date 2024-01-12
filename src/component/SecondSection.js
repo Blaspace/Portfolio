@@ -11,6 +11,14 @@ import news from "../public/news.PNG";
 function SecondSection() {
   const fullStackProjects = [
     {
+      name: "News Website",
+      url: "https://newsweb-i8wp.onrender.com",
+      about:
+        "News Scraper App is a dynamic web application that leverages the power of React and Node.js to fetch and display real-time news from CNN. The application seamlessly integrates a web scraper, built using Node.js, to gather the latest news articles from CNN's website. The collected data is then presented in a user-friendly interface crafted with React.",
+      skills: ["React.js", "Node.js", "Express", "CSS"],
+      img: news,
+    },
+    {
       name: "YouFeat",
       url: "https://youfeat.ng",
       git: "",
@@ -18,14 +26,6 @@ function SecondSection() {
         "YouFeat is a dynamic and engaging online platform designed to host talent competitions, providing a stage for individuals to showcase their unique abilities. Developed using ReactJS for the front end, NodeJS and ExpressJS for the backend, and MongoDB for data storage, this project seamlessly integrates technology and creativity to create an immersive user experience.",
       skills: ["React.js", "Node.js", "Express", "MongoDB", "CSS"],
       img: youfeat,
-    },
-    {
-      name: "News Website",
-      url: "https://newsweb-i8wp.onrender.com",
-      about:
-        "News Scraper App is a dynamic web application that leverages the power of React and Node.js to fetch and display real-time news from CNN. The application seamlessly integrates a web scraper, built using Node.js, to gather the latest news articles from CNN's website. The collected data is then presented in a user-friendly interface crafted with React.",
-      skills: ["React.js", "Node.js", "Express", "CSS"],
-      img: news,
     },
     {
       name: "Employee Managment App",
@@ -79,56 +79,57 @@ function SecondSection() {
         <h1>
           <small>{"<"}</small>My Projects<small>{">"}</small>
         </h1>
+        <h3>Front-end</h3>
+        <br />
+        <br />
+        {frontEndProjects.map((value, i) => {
+          return (
+            <div className="project" key={i}>
+              <div>
+                <img
+                  src={value.img}
+                  alt="project"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <section>
+                <h2 data-aos="fade-left" data-aos-duration="1000">
+                  {value.name}
+                </h2>
+                <br />
+                <p>{value.about}</p>
+                <br />
+                <ul>
+                  {value.skills.map((v, x) => {
+                    return (
+                      <li
+                        key={x}
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay={`${x}00`}
+                      >
+                        {v}
+                      </li>
+                    );
+                  })}
+                </ul>
+                <br />
+                <button onClick={() => handleNavigate(value.url)}>
+                  <CgWebsite /> Visit
+                </button>
+              </section>
+            </div>
+          );
+        })}
         <h3>Full-stack</h3>
-        <br />
-        <br />
+
         <div className="all-projects">
           {fullStackProjects.map((value, i) => {
             return (
               <div className="project" key={i}>
                 <div alt="project" data-aos="zoom-in" data-aos-duration="1000">
                   <img src={value.img} alt="project" />
-                </div>
-                <section>
-                  <h2 data-aos="fade-left" data-aos-duration="1000">
-                    {value.name}
-                  </h2>
-                  <br />
-                  <p>{value.about}</p>
-                  <br />
-                  <ul>
-                    {value.skills.map((v, x) => {
-                      return (
-                        <li
-                          key={x}
-                          data-aos="fade-up"
-                          data-aos-duration="1000"
-                          data-aos-delay={`${x}00`}
-                        >
-                          {v}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  <br />
-                  <button onClick={() => handleNavigate(value.url)}>
-                    <CgWebsite /> Visit
-                  </button>
-                </section>
-              </div>
-            );
-          })}
-          <h3>Front-end</h3>
-          {frontEndProjects.map((value, i) => {
-            return (
-              <div className="project" key={i}>
-                <div>
-                  <img
-                    src={value.img}
-                    alt="project"
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                  />
                 </div>
                 <section>
                   <h2 data-aos="fade-left" data-aos-duration="1000">
