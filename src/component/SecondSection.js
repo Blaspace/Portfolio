@@ -7,9 +7,18 @@ import webc from "../public/webc.PNG";
 import color from "../public/color.PNG";
 import admin from "../public/admin.PNG";
 import news from "../public/news.PNG";
+import movie from "../public/movie.PNG";
 
 function SecondSection() {
   const fullStackProjects = [
+    {
+      name: "Myflix",
+      url: "https://movie-nzm2.onrender.com",
+      about:
+        "Movie Hub is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
+      img: movie,
+      skills: ["React.js", "Node.js", "Express", "CSS"],
+    },
     {
       name: "News Website",
       url: "https://newsweb-i8wp.onrender.com",
