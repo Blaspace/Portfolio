@@ -45,15 +45,6 @@ function SecondSection() {
       skills: ["React.js", "Node.js", "Express", "MongoDB", "CSS"],
       img: admin,
     },
-    {
-      name: "Blogy",
-      url: "https://blog-app-client-73he.onrender.com",
-      git: "",
-      about:
-        "Here is a social media web application, built with React.js, Node.js, Express.js and MongoDB, that allows users connect in a secure and user-friendly environment. By providing essential features such as post editing, profile customization, and robust user authentication.",
-      skills: ["React.js", "Node.js", "Express", "MongoDB", "CSS"],
-      img: blogy,
-    },
   ];
 
   const handleNavigate = (uri) => {
@@ -88,49 +79,7 @@ function SecondSection() {
         <h1>
           <small>{"<"}</small>My Projects<small>{">"}</small>
         </h1>
-        <h3>Front-end</h3>
-        <br />
-        <br />
-        {frontEndProjects.map((value, i) => {
-          return (
-            <div className="project" key={i}>
-              <div>
-                <img
-                  src={value.img}
-                  alt="project"
-                  data-aos="zoom-in"
-                  data-aos-duration="1000"
-                />
-              </div>
-              <section>
-                <h2 data-aos="fade-left" data-aos-duration="1000">
-                  {value.name}
-                </h2>
-                <br />
-                <p>{value.about}</p>
-                <br />
-                <ul>
-                  {value.skills.map((v, x) => {
-                    return (
-                      <li
-                        key={x}
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
-                        data-aos-delay={`${x}00`}
-                      >
-                        {v}
-                      </li>
-                    );
-                  })}
-                </ul>
-                <br />
-                <button onClick={() => handleNavigate(value.url)}>
-                  <CgWebsite /> Visit
-                </button>
-              </section>
-            </div>
-          );
-        })}
+
         <h3>Full-stack</h3>
 
         <div className="all-projects">
@@ -138,7 +87,49 @@ function SecondSection() {
             return (
               <div className="project" key={i}>
                 <div alt="project" data-aos="zoom-in" data-aos-duration="1000">
-                  <img src={value.img} alt="project" />
+                  <img src={value.img} alt="project" loading="lazy" />
+                </div>
+                <section>
+                  <h2 data-aos="fade-left" data-aos-duration="1000">
+                    {value.name}
+                  </h2>
+                  <br />
+                  <p>{value.about}</p>
+                  <br />
+                  <ul>
+                    {value.skills.map((v, x) => {
+                      return (
+                        <li
+                          key={x}
+                          data-aos="fade-up"
+                          data-aos-duration="1000"
+                          data-aos-delay={`${x}00`}
+                        >
+                          {v}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  <br />
+                  <button onClick={() => handleNavigate(value.url)}>
+                    <CgWebsite /> Visit
+                  </button>
+                </section>
+              </div>
+            );
+          })}
+          <h3>Front-end</h3>
+          {frontEndProjects.map((value, i) => {
+            return (
+              <div className="project" key={i}>
+                <div>
+                  <img
+                    src={value.img}
+                    alt="project"
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    loading="lazy"
+                  />
                 </div>
                 <section>
                   <h2 data-aos="fade-left" data-aos-duration="1000">
