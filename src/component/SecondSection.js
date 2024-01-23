@@ -8,6 +8,7 @@ import color from "../public/color.PNG";
 import admin from "../public/admin.PNG";
 import news from "../public/news.PNG";
 import movie from "../public/movie.PNG";
+import ecom from "../public/ecommerce.PNG";
 
 function SecondSection() {
   const fullStackProjects = [
@@ -20,6 +21,15 @@ function SecondSection() {
       skills: ["React.js", "Node.js", "Express", "CSS"],
     },
     {
+      name: "ShopSmart",
+      url: "https://shopsmart-razv.onrender.com",
+      git: "https://github.com/Blaspace/e-commerce",
+      about:
+        "I recently developed a dynamic e-commerce store, showcasing my expertise in web development and design. The platform seamlessly integrates user-friendly navigation with a visually appealing interface, ensuring a smooth and enjoyable shopping experience. I aimed to provide a robust and accessible online storefront. Through this project, I demonstrated my proficiency in crafting functional and aesthetically pleasing websites that meet the demands of modern e-commerce standards.",
+      skills: ["React.js", "CSS"],
+      img: ecom,
+    },
+    {
       name: "News Website",
       url: "https://newsweb-i8wp.onrender.com",
       about:
@@ -27,7 +37,7 @@ function SecondSection() {
       skills: ["React.js", "Node.js", "Express", "CSS"],
       img: news,
     },
-    {
+    /* {
       name: "YouFeat",
       url: "https://youfeat.ng",
       git: "",
@@ -44,7 +54,7 @@ function SecondSection() {
         "Welcome to our Employee Management Application, a powerful tool designed to streamline employee management, boost productivity, and enhance collaboration. Whether you're an employee or a manager, our platform has something to offer for everyone.",
       skills: ["React.js", "Node.js", "Express", "MongoDB", "CSS"],
       img: admin,
-    },
+    },*/
   ];
 
   const handleNavigate = (uri) => {
@@ -118,7 +128,6 @@ function SecondSection() {
               </div>
             );
           })}
-          <h3>Front-end</h3>
           {frontEndProjects.map((value, i) => {
             return (
               <div className="project" key={i}>
