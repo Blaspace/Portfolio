@@ -1,4 +1,5 @@
 import React from "react";
+import cv from "../public/JAMES.docx";
 
 function Header() {
   return (
@@ -9,9 +10,14 @@ function Header() {
           <p>
             <small>{"<"}</small>Full Stack Web Developer<small>{">"}</small>
           </p>
-          <a href="#fourth">
-            <button>Contact</button>
-          </a>
+          <div>
+            <a href="#fourth">
+              <button className="hbtn">Contact</button>
+            </a>
+            <a href={cv} download>
+              <button className="hbtn2">Download CV</button>
+            </a>
+          </div>
         </div>
       </div>
     </header>

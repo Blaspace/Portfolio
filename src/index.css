@@ -102,6 +102,10 @@ body {
   max-width: 1200px;
   color: #fafafa;
 }
+.header-text div {
+  display: flex;
+  gap: 15px;
+}
 .header-con h1 {
   font-size: 2.5rem;
   margin-top: 50px;
@@ -116,26 +120,31 @@ body {
 }
 .header-con button {
   margin-top: 20px;
-  height: 50px;
-  width: 150px;
+  height: 30px;
+  width: 130px;
+  cursor: pointer;
   font-size: 20px;
   border-radius: 20px;
-  background-color: transparent;
   color: #fafafa;
   font-weight: 500;
   border: 2px solid #0f9b0f;
   transition: background-color 500ms;
   animation: fadein 1.5s ease-out;
 }
-.header-con button {
-  color: #fafafa;
-  text-decoration: none;
+.hbtn2 {
+  background-color: #0f9b0f;
 }
-.header-con button:hover {
+.hbtn2:hover {
+  background-color: transparent;
+}
+.hbtn {
+  background-color: transparent;
+}
+.hbtn:hover {
   background-color: #0f9b0f;
 }
 .header-text {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 /*first section*/
 .first {
@@ -393,8 +402,12 @@ textarea::placeholder {
   .header {
     height: 110vh;
   }
+
   .header-con h1 {
     font-size: 4rem;
+  }
+  .header-text {
+    margin-left: 30px;
   }
   .header-con p {
     font-size: 2rem;
