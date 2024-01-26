@@ -120,7 +120,8 @@ body {
 }
 .header-con button {
   margin-top: 20px;
-  height: 30px;
+  height: 40px;
+  padding: 5px;
   width: 130px;
   cursor: pointer;
   font-size: 20px;
