@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub } from "react-icons/ai";
+import { IoLogoGithub } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
 import youfeat from "../public/youfeat.PNG";
 import blogy from "../public/blogApp.jpg";
@@ -15,8 +15,9 @@ function SecondSection() {
     {
       name: "Myflix",
       url: "https://movie-nzm2.onrender.com",
+      git: "https://github.com/Blaspace/movie-app",
       about:
-        "Movie Hub is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
+        "Myflix is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
       img: movie,
       skills: ["React.js", "Node.js", "Express", "CSS"],
     },
@@ -32,6 +33,7 @@ function SecondSection() {
     {
       name: "News Website",
       url: "https://newsweb-i8wp.onrender.com",
+      git: "https://github.com/Blaspace/newsweb",
       about:
         "News Scraper App is a dynamic web application that leverages the power of React and Node.js to fetch and display real-time news from CNN. The application seamlessly integrates a web scraper, built using Node.js, to gather the latest news articles from CNN's website. The collected data is then presented in a user-friendly interface crafted with React.",
       skills: ["React.js", "Node.js", "Express", "CSS"],
@@ -121,8 +123,17 @@ function SecondSection() {
                     })}
                   </ul>
                   <br />
-                  <button onClick={() => handleNavigate(value.url)}>
+                  <button
+                    onClick={() => handleNavigate(value.url)}
+                    className="project-btn"
+                  >
                     <CgWebsite /> Visit
+                  </button>
+                  <button
+                    onClick={() => handleNavigate(value.git)}
+                    className="project-btn2"
+                  >
+                    <IoLogoGithub /> Github
                   </button>
                 </section>
               </div>
@@ -162,8 +173,17 @@ function SecondSection() {
                     })}
                   </ul>
                   <br />
-                  <button onClick={() => handleNavigate(value.url)}>
+                  <button
+                    onClick={() => handleNavigate(value.url)}
+                    className="project-btn"
+                  >
                     <CgWebsite /> Visit
+                  </button>
+                  <button
+                    onClick={() => handleNavigate(value.git)}
+                    className="project-btn2"
+                  >
+                    <IoLogoGithub /> Github
                   </button>
                 </section>
               </div>
