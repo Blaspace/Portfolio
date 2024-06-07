@@ -110,7 +110,7 @@ body {
   font-size: 2.5rem;
   margin-top: 50px;
   animation: fromleft 1s ease-out;
-  -webkit-text-stroke: 2px #0f9b0f;
+  -webkit-text-stroke: 1px #0f9b0f;
   color: transparent;
 }
 
@@ -130,7 +130,7 @@ body {
   border-radius: 20px;
   color: #fafafa;
   font-weight: 500;
-  border: 2px solid #0f9b0f;
+  border: 1px solid #0f9b0f;
   transition: background-color 500ms;
   animation: fadein 1.5s ease-out;
 }
