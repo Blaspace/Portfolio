@@ -66,7 +66,7 @@ function SecondSection() {
   const frontEndProjects = [
     {
       name: "Company Landing Page",
-      url: "https://company-cyi0.onrender.com",
+      url: "https://guildev.onrender.com",
       git: "https://github.com/Blaspace/wed.git",
       about:
         "The goal of this project is to create a unique, visually appealing, and informative website using Reactjs that would reflect both my technical expertise and my creative design sensibilities. I also integrated stripe into the application to showcase my ability to work with apis.",
