@@ -9,9 +9,20 @@ import admin from "../public/admin.PNG";
 import news from "../public/news.PNG";
 import movie from "../public/movie.PNG";
 import ecom from "../public/ecommerce.PNG";
+import school from "../public/ecommerce.PNG";
+
 
 function SecondSection() {
   const fullStackProjects = [
+    {
+      name: "School Management Application",
+      url: "https://school-manager-o95d.onrender.com",
+      git: "https://github.com/Blaspace/school_manager",
+      about:
+        "Developed a comprehensive school management application that enables schools to efficiently manage their operations, including student and teacher administration, billing, and communication",
+      img: school,
+      skills: ["React.js", "Node.js", "Express", "CSS", "Stripe", "MongoDB"],
+    },
     {
       name: "Myflix",
       url: "https://movie-nzm2.onrender.com",
