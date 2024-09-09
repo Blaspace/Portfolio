@@ -9,7 +9,7 @@ import admin from "../public/admin.PNG";
 import news from "../public/news.PNG";
 import movie from "../public/movie.PNG";
 import ecom from "../public/ecommerce.PNG";
-import school from "../public/ecommerce.PNG";
+import school from "../public/schoolapp.png";
 
 
 function SecondSection() {
