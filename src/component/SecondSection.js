@@ -3,14 +3,13 @@ import { IoLogoGithub } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
 import youfeat from "../public/youfeat.PNG";
 import blogy from "../public/blogApp.jpg";
-import webc from "../public/webc.PNG";
+import webc from "../public/company.PNG";
 import color from "../public/color.PNG";
 import admin from "../public/admin.PNG";
-import news from "../public/news.PNG";
+import news from "../public/news.png";
 import movie from "../public/movie.PNG";
 import ecom from "../public/ecommerce.PNG";
 import school from "../public/schoolapp.png";
-
 
 function SecondSection() {
   const fullStackProjects = [
@@ -43,10 +42,10 @@ function SecondSection() {
     },
     {
       name: "News Website",
-      url: "https://newsweb-i8wp.onrender.com",
-      git: "https://github.com/Blaspace/newsweb",
+      url: "https://bbcnews-ffpb.onrender.com",
+      git: "https://github.com/Blaspace/news",
       about:
-        "News Scraper App is a dynamic web application that leverages the power of React and Node.js to fetch and display real-time news from CNN. The application seamlessly integrates a web scraper, built using Node.js, to gather the latest news articles from CNN's website. The collected data is then presented in a user-friendly interface crafted with React.",
+        "News Scraper App is a dynamic web application that leverages the power of Node.js to fetch and display real-time news from BBC. The application seamlessly integrates a web scraper, built using Node.js, to gather the latest news articles from BBC's website. The collected data is then presented in a user-friendly interface crafted with EJS.",
       skills: ["React.js", "Node.js", "Express", "CSS"],
       img: news,
     },
@@ -77,22 +76,12 @@ function SecondSection() {
   const frontEndProjects = [
     {
       name: "Company Landing Page",
-      url: "https://guildev.onrender.com",
-      git: "https://github.com/Blaspace/wed.git",
+      url: "https://guildev-ibuq.onrender.com",
+      git: "https://github.com/Blaspace/guildev.git",
       about:
-        "The goal of this project is to create a unique, visually appealing, and informative website using Reactjs that would reflect both my technical expertise and my creative design sensibilities. I also integrated stripe into the application to showcase my ability to work with apis.",
+        "Designed and developed a professional static website for Guildev, a web development agency. The website effectively showcases the company's services, expertise, and portfolio, offering a seamless user experience with a modern, responsive design.",
       skills: ["React.js", "CSS"],
       img: webc,
-    },
-
-    {
-      name: "Landing Page",
-      url: "https://colorweb.onrender.com",
-      git: "https://github.com/Blaspace/wed.git",
-      about:
-        "The goal of this project is to create a unique, visually appealing, and informative website using Reactjs that would reflect both my technical expertise and my creative design sensibilities.",
-      skills: ["React.js", "CSS"],
-      img: color,
     },
   ];
 
