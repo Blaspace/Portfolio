@@ -1,11 +1,11 @@
 import React from "react";
 import { IoLogoGithub } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
-import youfeat from "../public/youfeat.PNG";
-import blogy from "../public/blogApp.jpg";
+//import youfeat from "../public/youfeat.PNG";
+//import blogy from "../public/blogApp.jpg";
 import webc from "../public/company.PNG";
-import color from "../public/color.PNG";
-import admin from "../public/admin.PNG";
+//import color from "../public/color.PNG";
+//import admin from "../public/admin.PNG";
 import news from "../public/news.png";
 import movie from "../public/movie.PNG";
 import ecom from "../public/ecommerce.PNG";
