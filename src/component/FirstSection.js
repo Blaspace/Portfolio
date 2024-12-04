@@ -17,18 +17,13 @@ function FirstSection() {
           </h1>
           <br />
           <p data-aos="fade" data-aos-duration="500">
-            Hey there, I'm James Ngbede Samuel, a full stack developer, With
-            expertise in HTML/CSS, JavaScript, React.js, Node.js, Express.js,
-            and MongoDB, I'm dedicated to crafting seamless web experiences that
-            blend form and function.
-            <br />
-            My journey started with a passion for problem-solving through code.
-            From sleek user interfaces to robust backends, I bring ideas to life
-            with precision and creativity. I'm committed to staying ahead of
-            industry trends and embracing new challenges.
-            <br />
-            When I'm not coding, I'm exploring emerging tech, enjoying a good
-            book, or fueling my creativity.
+            Experienced and results-oriented Full-Stack Developer with over 4
+            years of proven success in designing, building, and maintaining
+            scalable web applications. Specialized in the MERN stack, delivering
+            end-to-end solutions for diverse domains such as EduTech,
+            e-commerce, and social platforms. Proficient in integrating modern
+            technologies and ensuring high performance, security, and user
+            satisfaction.
             <br />
             Let's connect and shape the future through technology.
           </p>
@@ -41,7 +36,7 @@ function FirstSection() {
                   "https://www.linkedin.com/in/james-samuel-8a3b21274"
                 )
               }
-              data-aos="fade-up"
+              data-aos="fade-up" 
               data-aos-duration="1000"
             />
             <FaGithubSquare
