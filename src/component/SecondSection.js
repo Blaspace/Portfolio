@@ -6,7 +6,7 @@ import { CgWebsite } from "react-icons/cg";
 import webc from "../public/company.PNG";
 //import color from "../public/color.PNG";
 //import admin from "../public/admin.PNG";
-import news from "../public/news.png";
+import news from "../public/BBC.png";
 import movie from "../public/movie.PNG";
 import ecom from "../public/ecommerce.PNG";
 import school from "../public/schoolapp.png";
