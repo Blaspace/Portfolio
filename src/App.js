@@ -10,6 +10,17 @@ import Aos from "aos";
 
 function App() {
   useEffect(() => {
+    fetch("https://school-managment-server.onrender.com/")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+    fetch("https://bbcnews-ffpb.onrender.com/")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+    fetch("https://movie-app-nqr1.onrender.com/")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, []);
+  useEffect(() => {
     Aos.init();
   });
   return (
