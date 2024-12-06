@@ -27,6 +27,6 @@ jobs:
       with:
         server: ftp.youfeat.com.ng
         username: james@jamesdev.com.ng
-        password: JHA,Z&a[nu(]
+        password: FGkIkrVaTe[P
         protocol: ftps
         local-dir: ./build/
