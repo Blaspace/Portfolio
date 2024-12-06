@@ -14,15 +14,16 @@ function App() {
       .then((res) => res.json())
       .then((data) => console.log(data));
     fetch("https://bbcnews-ffpb.onrender.com/")
-      .then((res) => res.json())
       .then((data) => console.log(data));
     fetch("https://movie-app-nqr1.onrender.com/")
       .then((res) => res.json())
       .then((data) => console.log(data));
   }, []);
+  fetch("https://stripeapi-vuet.onrender.com")
+  .then(res=>res.json())
   useEffect(() => {
     Aos.init();
-  });
+  }, []);
   return (
     <div>
       <Nav />
