@@ -1,8 +1,6 @@
 import React from "react";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { FaReact, FaNodeJs, FaGit } from "react-icons/fa";
-import { SiJavascript, SiMongodb } from "react-icons/si";
-import { AiOutlineHtml5 } from "react-icons/ai";
+import img from "../public/james.png";
 
 function FirstSection() {
   const handleNavigate = (uri) => {
@@ -36,7 +34,7 @@ function FirstSection() {
                   "https://www.linkedin.com/in/james-samuel-8a3b21274"
                 )
               }
-              data-aos="fade-up" 
+              data-aos="fade-up"
               data-aos-duration="1000"
             />
             <FaGithubSquare
@@ -48,29 +46,37 @@ function FirstSection() {
             />
           </span>
         </section>
-        <section id="second">
-          <div timing="0s" data-aos="fade-left" data-aos-duration="500">
-            <AiOutlineHtml5 size={25} style={{ marginRight: "5px" }} />{" "}
-            <p>Html/css</p>
-          </div>
-          <div timing="0.5s" data-aos="fade-left" data-aos-duration="500">
-            <SiJavascript size={25} style={{ marginRight: "5px" }} />{" "}
-            <p>JavaScript</p>
-          </div>
-          <div timing="1s" data-aos="fade-left" data-aos-duration="500">
-            <FaReact size={25} style={{ marginRight: "5px" }} /> <p>React.js</p>
-          </div>
-          <div timing="1.5s" data-aos="fade-left" data-aos-duration="500">
-            <FaNodeJs size={25} style={{ marginRight: "5px" }} />{" "}
-            <p>Node.js/Express</p>
-          </div>
-          <div timing="2s" data-aos="fade-left" data-aos-duration="500">
-            <SiMongodb size={25} style={{ marginRight: "5px" }} />{" "}
-            <p>MongoDB</p>
-          </div>
-          <div timing="2.5s" data-aos="fade-left" data-aos-duration="500">
-            <FaGit size={25} style={{ marginRight: "5px" }} /> <p>Git/GitHub</p>
-          </div>
+        <section id="second" data-aos="fade-up" data-aos-duration="1000">
+        <img
+            src={img}
+            alt="James Ngbede Samuel"
+            width={"100%"}
+            height={"500px"}
+            style={{ objectFit: "cover",zIndex: "2",filter:"grayscale(100%)"}}
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="100"
+          />
+        <img
+            src={img}
+            alt="James Ngbede Samuel"
+            width={"100%"}
+            height={"500px"}
+            style={{ objectFit: "cover", position: "absolute", right:"10px", top: "20px", opacity: '0.5', zIndex: '-1', filter:"grayscale(100%)"}}
+            data-aos="fade-left"
+            data-aos-duration="2500"
+            data-aos-delay="150"
+          />
+          <img
+            src={img}
+            alt="James Ngbede Samuel"
+            width={"100%"}
+            height={"500px"}
+            style={{ objectFit: "cover", position: "absolute", right:"20px", top: "20px", opacity: '0.3', zIndex: '-1', filter:"grayscale(100%)"}}
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-delay="150"
+          />
         </section>
       </div>
     </div>

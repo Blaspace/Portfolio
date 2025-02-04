@@ -7,6 +7,7 @@ import ThirdSection from "./component/ThirdSection";
 import Footer from "./component/Footer";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import Skills from "./component/Skills";
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
       <Nav />
       <Header />
       <FirstSection />
+      <Skills/>
       <SecondSection />
       <ThirdSection />
       <Footer />
