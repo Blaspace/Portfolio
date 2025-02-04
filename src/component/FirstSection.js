@@ -47,22 +47,34 @@ function FirstSection() {
           </span>
         </section>
         <section id="second" data-aos="fade-up" data-aos-duration="1000">
-        <img
+          <img
             src={img}
             alt="James Ngbede Samuel"
             width={"100%"}
             height={"500px"}
-            style={{ objectFit: "cover",zIndex: "2",filter:"grayscale(100%)"}}
+            style={{
+              objectFit: "cover",
+              zIndex: "2",
+              filter: "grayscale(100%)",
+            }}
             data-aos="fade-left"
             data-aos-duration="2000"
             data-aos-delay="100"
           />
-        <img
+          <img
             src={img}
             alt="James Ngbede Samuel"
             width={"100%"}
             height={"500px"}
-            style={{ objectFit: "cover", position: "absolute", right:"10px", top: "20px", opacity: '0.5', zIndex: '-1', filter:"grayscale(100%)"}}
+            style={{
+              objectFit: "cover",
+              position: "absolute",
+              right: "10px",
+              top: "20px",
+              opacity: "0.5",
+              zIndex: "-1",
+              filter: "grayscale(100%)",
+            }}
             data-aos="fade-left"
             data-aos-duration="2500"
             data-aos-delay="150"
@@ -72,7 +84,15 @@ function FirstSection() {
             alt="James Ngbede Samuel"
             width={"100%"}
             height={"500px"}
-            style={{ objectFit: "cover", position: "absolute", right:"20px", top: "20px", opacity: '0.3', zIndex: '-1', filter:"grayscale(100%)"}}
+            style={{
+              objectFit: "cover",
+              position: "absolute",
+              right: "20px",
+              top: "20px",
+              opacity: "0.3",
+              zIndex: "-1",
+              filter: "grayscale(100%)",
+            }}
             data-aos="fade-left"
             data-aos-duration="3000"
             data-aos-delay="150"
