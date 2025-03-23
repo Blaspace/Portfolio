@@ -1,13 +1,10 @@
 import React from "react";
 import { IoLogoGithub } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
-//import youfeat from "../public/youfeat.PNG";
-//import blogy from "../public/blogApp.jpg";
 import webc from "../public/company-min.PNG";
-//import color from "../public/color.PNG";
-//import admin from "../public/admin.PNG";
+import Movie from "../public/movie.PNG";
 import news from "../public/BBC-min.png";
-import movie from "../public/movie.PNG";
+import Restaurant from "../public/restaurant.PNG";
 import ecom from "../public/ecommerce.PNG";
 import school from "../public/schoolapp.png";
 
@@ -23,13 +20,13 @@ function SecondSection() {
       skills: ["React.js", "Node.js", "Express", "CSS", "Stripe", "MongoDB"],
     },
     {
-      name: "Myflix",
-      url: "https://movie-nzm2.onrender.com",
-      git: "https://github.com/Blaspace/movie-app",
+      name: "Restaurant Portal",
+      url: "https://restaurant-aosa.onrender.com",
+      git: "https://github.com/Blaspace/restaurant",
       about:
-        "Myflix is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
-      img: movie,
-      skills: ["React.js", "Node.js", "Express", "CSS"],
+        "Developed a full-stack web app enabling users to discover and order from local restaurants based on their location. The platform integrates real-time geolocation tracking, restaurant listings, and a secure payment gateway for a seamless food ordering experience.",
+      img: Restaurant,
+      skills: ["React.js", "Node.js", "Express", "CSS", "Paystack", "MongoDB"],
     },
     {
       name: "ShopSmart",
@@ -48,6 +45,15 @@ function SecondSection() {
         "News Scraper App is a dynamic web application that leverages the power of Node.js to fetch and display real-time news from BBC. The application seamlessly integrates a web scraper, built using Node.js, to gather the latest news articles from BBC's website. The collected data is then presented in a user-friendly interface crafted with EJS.",
       skills: ["React.js", "Node.js", "Express", "CSS"],
       img: news,
+    },
+    {
+      name: "Myflix",
+      url: "https://movie-nzm2.onrender.com",
+      git: "https://github.com/Blaspace/movie-app",
+      about:
+        "Myflix is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
+      img: Movie,
+      skills: ["React.js", "Node.js", "Express", "CSS"],
     },
     /* {
       name: "YouFeat",
