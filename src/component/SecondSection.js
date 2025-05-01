@@ -28,6 +28,15 @@ function SecondSection() {
       img: Restaurant,
       skills: ["React.js", "Node.js", "Express", "CSS", "Paystack", "MongoDB"],
     },
+{
+      name: "Myflix",
+      url: "https://movie-nzm2.onrender.com",
+      git: "https://github.com/Blaspace/movie-app",
+      about:
+        "Myflix is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
+      img: Movie,
+      skills: ["React.js", "Node.js", "Express", "CSS"],
+    },
     {
       name: "ShopSmart",
       url: "https://shopsmart-razv.onrender.com",
@@ -46,15 +55,7 @@ function SecondSection() {
       skills: ["React.js", "Node.js", "Express", "CSS"],
       img: news,
     },
-    {
-      name: "Myflix",
-      url: "https://movie-nzm2.onrender.com",
-      git: "https://github.com/Blaspace/movie-app",
-      about:
-        "Myflix is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
-      img: Movie,
-      skills: ["React.js", "Node.js", "Express", "CSS"],
-    },
+    
     /* {
       name: "YouFeat",
       url: "https://youfeat.ng",
