@@ -1,5 +1,5 @@
 import React from "react";
-import cv from "../public/James Ngbede.docx";
+import cv from "../public/resume.docx";
 
 function Header() {
   return (

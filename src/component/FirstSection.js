@@ -15,15 +15,17 @@ function FirstSection() {
           </h1>
           <br />
           <p data-aos="fade" data-aos-duration="500">
-            Experienced and results-oriented Full-Stack Developer with over 4
-            years of proven success in designing, building, and maintaining
-            scalable web applications. Specialized in the MERN stack, delivering
-            end-to-end solutions for diverse domains such as EduTech,
-            e-commerce, and social platforms. Proficient in integrating modern
-            technologies and ensuring high performance, security, and user
-            satisfaction.
+            👋 Hey there! I’m a Full-Stack Developer with 5+ years of hands-on
+            experience building powerful, user-friendly web applications. I
+            specialize in the MERN stack and love creating end-to-end solutions
+            for platforms in EduTech, e-commerce, social tech and more.
             <br />
-            Let's connect and shape the future through technology.
+            Whether it’s crafting sleek front-ends or designing robust back-end
+            systems, I’m all about performance, security, and a smooth user
+            experience. I enjoy working with modern tools and turning great
+            ideas into real, scalable products.
+            <br />
+            Let’s connect and build something awesome together! 🚀
           </p>
           <br />
           <span>

@@ -161,7 +161,7 @@ body {
 }
 .first-con {
   color: #fafafa;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   display: flex;
   justify-content: space-around;
@@ -181,7 +181,7 @@ body {
   font-size: 2rem;
 }
 .first-con section {
-  width: 90%;
+  width: 100%;
 }
 .skills-con{
   background-color: #081833;
@@ -238,7 +238,7 @@ body {
 }
 .second-con {
   color: #fafafa;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   gap: 20px;
   display: flex;
@@ -265,7 +265,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #0b2044;

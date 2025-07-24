@@ -1,22 +1,15 @@
 import React from "react";
 import { IoLogoGithub } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
-import webc from "../public/company-min.PNG";
-import Movie from "../public/movie.PNG";
-import news from "../public/BBC-min.png";
-import Restaurant from "../public/restaurant.PNG";
-import ecom from "../public/ecommerce.PNG";
-import school from "../public/schoolapp.png";
 
 function SecondSection() {
   const fullStackProjects = [
     {
-      name: "School Management Application",
-      url: "https://school-manager-o95d.onrender.com",
-      git: "https://github.com/Blaspace/school_manager",
+      name: "Real Estate Investment Website",
+      url: "https://youfeathomes.com.ng",
       about:
-        "Developed a comprehensive school management application that enables schools to efficiently manage their operations, including student and teacher administration, billing, and communication",
-      img: school,
+        "Led the end-to-end development and deployment of a real estate investment platform as a full-stack developer and consultant. Collaborated with stakeholders to translate business requirements into a scalable web solution, integrating secure payment systems and building robust admin tools. Then follow it with the detailed experience",
+      img: require('../public/real.png'),
       skills: ["React.js", "Node.js", "Express", "CSS", "Stripe", "MongoDB"],
     },
     {
@@ -25,16 +18,26 @@ function SecondSection() {
       git: "https://github.com/Blaspace/restaurant",
       about:
         "Developed a full-stack web app enabling users to discover and order from local restaurants based on their location. The platform integrates real-time geolocation tracking, restaurant listings, and a secure payment gateway for a seamless food ordering experience.",
-      img: Restaurant,
+      img: require('../public/food.png'),
       skills: ["React.js", "Node.js", "Express", "CSS", "Paystack", "MongoDB"],
     },
+    {
+      name: "School Management Application",
+      url: "https://school-manager-o95d.onrender.com",
+      git: "https://github.com/Blaspace/school_manager",
+      about:
+        "Developed a comprehensive school management application that enables schools to efficiently manage their operations, including student and teacher administration, billing, and communication",
+      img: require('../public/schoolNew.png'),
+      skills: ["React.js", "Node.js", "Express", "CSS", "Stripe", "MongoDB"],
+    },
+    
 {
       name: "Myflix",
       url: "https://movie-nzm2.onrender.com",
       git: "https://github.com/Blaspace/movie-app",
       about:
         "Myflix is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
-      img: Movie,
+      img: require('../public/movieNew.png'),
       skills: ["React.js", "Node.js", "Express", "CSS"],
     },
     {
@@ -44,36 +47,8 @@ function SecondSection() {
       about:
         "I recently developed a dynamic e-commerce store, showcasing my expertise in web development and design. The platform seamlessly integrates user-friendly navigation with a visually appealing interface, ensuring a smooth and enjoyable shopping experience. I aimed to provide a robust and accessible online storefront. Through this project, I demonstrated my proficiency in crafting functional and aesthetically pleasing websites that meet the demands of modern e-commerce standards.",
       skills: ["React.js", "CSS", "Node.js", "Express", "Stripe"],
-      img: ecom,
+      img: require('../public/econ.png'),
     },
-    {
-      name: "News Website",
-      url: "https://bbcnews-ffpb.onrender.com",
-      git: "https://github.com/Blaspace/news",
-      about:
-        "News Scraper App is a dynamic web application that leverages the power of Node.js to fetch and display real-time news from BBC. The application seamlessly integrates a web scraper, built using Node.js, to gather the latest news articles from BBC's website. The collected data is then presented in a user-friendly interface crafted with EJS.",
-      skills: ["React.js", "Node.js", "Express", "CSS"],
-      img: news,
-    },
-    
-    /* {
-      name: "YouFeat",
-      url: "https://youfeat.ng",
-      git: "",
-      about:
-        "YouFeat is a dynamic and engaging online platform designed to host talent competitions, providing a stage for individuals to showcase their unique abilities. Developed using ReactJS for the front end, NodeJS and ExpressJS for the backend, and MongoDB for data storage, this project seamlessly integrates technology and creativity to create an immersive user experience.",
-      skills: ["React.js", "Node.js", "Express", "MongoDB", "CSS"],
-      img: youfeat,
-    },
-    {
-      name: "Employee Managment App",
-      url: "https://management-81es.onrender.com/",
-      git: "",
-      about:
-        "Welcome to our Employee Management Application, a powerful tool designed to streamline employee management, boost productivity, and enhance collaboration. Whether you're an employee or a manager, our platform has something to offer for everyone.",
-      skills: ["React.js", "Node.js", "Express", "MongoDB", "CSS"],
-      img: admin,
-    },*/
   ];
 
   const handleNavigate = (uri) => {
@@ -83,12 +58,12 @@ function SecondSection() {
   const frontEndProjects = [
     {
       name: "Company Landing Page",
-      url: "https://guildev-ibuq.onrender.com",
+      url: "https://guilders.com.ng",
       git: "https://github.com/Blaspace/guildev.git",
       about:
         "Designed and developed a professional static website for Guildev, a web development agency. The website effectively showcases the company's services, expertise, and portfolio, offering a seamless user experience with a modern, responsive design.",
       skills: ["React.js", "CSS"],
-      img: webc,
+      img: require('../public/comp.png'),
     },
   ];
 
