@@ -27,6 +27,6 @@ jobs:
       with:
         server: ftp.youfeat.com.ng
         username: blaspace@jamesdev.com.ng
-        password: Iy3KnBlj3wcT
+        password: M9qPwy2h3Ti(RJOf
         protocol: ftps
         local-dir: ./build/
