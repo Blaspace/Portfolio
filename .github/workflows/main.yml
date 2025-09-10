@@ -25,8 +25,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.youfeat.com.ng
+        server: ftp.youfeathomes.com.ng
         username: blaspace@jamesdev.com.ng
-        password: M9qPwy2h3Ti(RJOf
+        password: 8gj3lkC#q;=,kYkI
         protocol: ftps
         local-dir: ./build/
