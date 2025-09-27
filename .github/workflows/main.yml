@@ -25,7 +25,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.youfeathomes.com.ng
+        server: ftp.mivora.com.ng
         username: Run@jamesdev.com.ng
         password: e]hL1T#..?E4n!WM
         protocol: ftps
