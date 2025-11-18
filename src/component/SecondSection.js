@@ -9,7 +9,7 @@ function SecondSection() {
       url: "https://youfeathomes.com.ng",
       about:
         "Led the end-to-end development and deployment of a real estate investment platform as a full-stack developer and consultant. Collaborated with stakeholders to translate business requirements into a scalable web solution, integrating secure payment systems and building robust admin tools. Then follow it with the detailed experience",
-      img: require('../public/real.png'),
+      img: require("../public/real.png"),
       skills: ["React.js", "Node.js", "Express", "CSS", "Stripe", "MongoDB"],
     },
     {
@@ -18,7 +18,7 @@ function SecondSection() {
       git: "https://github.com/Blaspace/movie-app",
       about:
         "Mivora is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
-      img: require('../public/movieNew.png'),
+      img: require("../public/movieNew.png"),
       skills: ["React.js", "Node.js", "Express", "CSS"],
     },
     {
@@ -27,7 +27,7 @@ function SecondSection() {
       git: "https://github.com/Blaspace/restaurant",
       about:
         "Developed a full-stack web app enabling users to discover and order from local restaurants based on their location. The platform integrates real-time geolocation tracking, restaurant listings, and a secure payment gateway for a seamless food ordering experience.",
-      img: require('../public/food.png'),
+      img: require("../public/food.png"),
       skills: ["React.js", "Node.js", "Express", "CSS", "Paystack", "MongoDB"],
     },
     {
@@ -36,10 +36,9 @@ function SecondSection() {
       git: "https://github.com/Blaspace/school_manager",
       about:
         "Developed a comprehensive school management application that enables schools to efficiently manage their operations, including student and teacher administration, billing, and communication",
-      img: require('../public/schoolNew.png'),
+      img: require("../public/schoolNew.png"),
       skills: ["React.js", "Node.js", "Express", "CSS", "Stripe", "MongoDB"],
     },
-    
 
     {
       name: "ShopSmart",
@@ -48,7 +47,7 @@ function SecondSection() {
       about:
         "I recently developed a dynamic e-commerce store, showcasing my expertise in web development and design. The platform seamlessly integrates user-friendly navigation with a visually appealing interface, ensuring a smooth and enjoyable shopping experience. I aimed to provide a robust and accessible online storefront. Through this project, I demonstrated my proficiency in crafting functional and aesthetically pleasing websites that meet the demands of modern e-commerce standards.",
       skills: ["React.js", "CSS", "Node.js", "Express", "Stripe"],
-      img: require('../public/econ.png'),
+      img: require("../public/econ.png"),
     },
   ];
 
@@ -64,7 +63,7 @@ function SecondSection() {
       about:
         "Designed and developed a professional static website for Guildev, a web development agency. The website effectively showcases the company's services, expertise, and portfolio, offering a seamless user experience with a modern, responsive design.",
       skills: ["React.js", "CSS"],
-      img: require('../public/comp.png'),
+      img: require("../public/comp.png"),
     },
   ];
 
@@ -112,12 +111,6 @@ function SecondSection() {
                   >
                     <CgWebsite /> Visit
                   </button>
-                  <button
-                    onClick={() => handleNavigate(value.git)}
-                    className="project-btn2"
-                  >
-                    <IoLogoGithub /> Github
-                  </button>
                 </section>
               </div>
             );
@@ -161,12 +154,6 @@ function SecondSection() {
                     className="project-btn"
                   >
                     <CgWebsite /> Visit
-                  </button>
-                  <button
-                    onClick={() => handleNavigate(value.git)}
-                    className="project-btn2"
-                  >
-                    <IoLogoGithub /> Github
                   </button>
                 </section>
               </div>
