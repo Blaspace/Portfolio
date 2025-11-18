@@ -13,6 +13,15 @@ function SecondSection() {
       skills: ["React.js", "Node.js", "Express", "CSS", "Stripe", "MongoDB"],
     },
     {
+      name: "Mivora",
+      url: "https://mivora.com.ng",
+      git: "https://github.com/Blaspace/movie-app",
+      about:
+        "Mivora is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
+      img: require('../public/movieNew.png'),
+      skills: ["React.js", "Node.js", "Express", "CSS"],
+    },
+    {
       name: "Restaurant Portal",
       url: "https://restaurant-aosa.onrender.com",
       git: "https://github.com/Blaspace/restaurant",
@@ -31,15 +40,7 @@ function SecondSection() {
       skills: ["React.js", "Node.js", "Express", "CSS", "Stripe", "MongoDB"],
     },
     
-{
-      name: "Myflix",
-      url: "https://movie-nzm2.onrender.com",
-      git: "https://github.com/Blaspace/movie-app",
-      about:
-        "Myflix is an immersive web application that seamlessly combines the power of Node.js and React to create a dynamic and user-friendly movie browsing experience. This platform enables users to explore a diverse range of movie categories and download their favorite films with ease.",
-      img: require('../public/movieNew.png'),
-      skills: ["React.js", "Node.js", "Express", "CSS"],
-    },
+
     {
       name: "ShopSmart",
       url: "https://shopsmart-razv.onrender.com",
